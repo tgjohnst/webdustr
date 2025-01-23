@@ -1,0 +1,44 @@
+{
+  "manifest_version": 2,
+  "name": "webdustr",
+  "version": "1.0",
+  "description": "A Firefox extension to efficiently review and manage bookmarks with a Tinder-like swipe interface.",
+  "permissions": [
+    "bookmarks",
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["swipe/swipe.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    "swipe/*",
+    "icons/*"
+  ],
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true,
+    "browser_style": true
+  }
+}

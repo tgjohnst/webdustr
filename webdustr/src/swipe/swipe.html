@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swipe.css">
+    <title>Swipe Bookmarks</title>
+</head>
+<body>
+    <div id="swipe-overlay">
+        <div id="swipe-bar">
+            <button id="swipe-left">Trash</button>
+            <button id="swipe-center">Skip</button>
+            <button id="swipe-right">Whitelist</button>
+        </div>
+        <div id="swipe-container">
+            <div id="swipe-card">
+                <h2 id="swipe-title">Title</h2>
+                <p id="swipe-url">URL</p>
+                <iframe id="bookmark-frame" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div id="bookmark-counter">0</div>
+    </div>
+    <script src="swipe.js"></script>
+</body>
+</html>

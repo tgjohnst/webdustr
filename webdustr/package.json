@@ -1,0 +1,21 @@
+{
+  "name": "webdustr",
+  "version": "1.0.0",
+  "description": "A Firefox extension to help users efficiently review and manage their bookmarks with a Tinder-like swipe interface.",
+  "main": "src/background.js",
+  "scripts": {
+    "build": "echo 'Building the extension...'",
+    "test": "echo 'Running tests...'",
+    "lint": "echo 'Linting the code...'"
+  },
+  "keywords": [
+    "firefox",
+    "extension",
+    "bookmarks",
+    "swipe"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

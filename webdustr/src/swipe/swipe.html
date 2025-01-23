@@ -9,13 +9,14 @@
 <body>
     <div id="swipe-overlay">
         <div id="swipe-bar">
+            <select id="folder-select"></select>
             <button id="swipe-left">Trash</button>
             <button id="swipe-center">Skip</button>
             <button id="swipe-right">Whitelist</button>
         </div>
         <div id="swipe-container">
             <div id="swipe-card">
-                <h2 id="swipe-title">Title</h2>
+                <h2 id="swipe-title">Title</h2><span id="warning-flag" style="display: none; color: red;">⚠️</span>
                 <p id="swipe-url">URL</p>
                 <iframe id="bookmark-frame" src="" frameborder="0"></iframe>
             </div>

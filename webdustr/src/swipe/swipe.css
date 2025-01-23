@@ -28,7 +28,7 @@ body {
     margin-bottom: 20px;
 }
 
-#swipe-bar button {
+#swipe-bar button, #swipe-bar select {
     border: none;
     border-radius: 50px;
     padding: 15px 30px;
@@ -92,6 +92,12 @@ body {
 }
 
 #swipe-url {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: gray;
+}
+
+#swipe-path {
     margin: 10px 0;
     font-size: 1rem;
     color: gray;

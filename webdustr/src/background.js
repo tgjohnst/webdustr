@@ -17,7 +17,7 @@ const handleMessages = (message, sender, sendResponse) => {
     switch (message.action) {
         case 'getBookmarks':
             bookmarkAccess().then(bookmarks => {
-                sendResponse({ bookmarks: flattenBookmarks(bookmarks) });
+                sendResponse({ bookmarks });
             });
             return true; // Keep the message channel open for sendResponse
         case 'keepBookmark':
@@ -43,6 +43,7 @@ const handleMessages = (message, sender, sendResponse) => {
     }
 };
 
+// This is not currently used
 const flattenBookmarks = (bookmarks) => {
     let flatBookmarks = [];
     const flatten = (nodes) => {
